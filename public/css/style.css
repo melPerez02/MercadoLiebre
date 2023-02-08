@@ -1,0 +1,259 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #EAC926
+}
+
+footer {
+    background-color: #ffffff;
+    padding-top: 60px;
+}
+
+body {
+    background-color: #ebebeb;
+    font-family: 'Roboto', sans-serif;
+}
+
+.titulares {
+    font-size: 24px;
+    color: #666;
+}
+
+.precios {
+    font-size: 18px;
+    width: 30%;
+}
+
+.descuentos {
+    font-size: 16px;
+    color: #39b54a;
+    width: 70%;
+}
+
+.descripciones {
+    font-size: 16px;
+    color: #666;
+    font-size: 0;
+}
+
+.cuerpodetexto {
+    font-size: 0px;
+    display: none;
+}
+
+ul {
+    list-style: none;
+    text-align: left;
+}
+
+
+#cuerpodetexto1 {
+    font-size: 12px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.burger-menu {
+    text-align: center;
+    background-color: #1259c3;
+    color: #ffffff;
+    font-size: 20px;
+    border-radius: 6px;
+    height: 35px;
+    width: 35px;
+    padding: 4px;
+    margin: auto;
+}
+
+.banner img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.fotoarticulos img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.fa-magnifying-glass {
+    background-color: #ffffff;
+    margin-left: 5px;
+    margin-top: 2px;
+    border: 1px solid black;
+}
+
+.buscador {
+    padding-left: 15px;
+}
+
+.subtitulo {
+    text-align: center;
+    color: #666;
+}
+
+.cuadrotexto {
+    text-align: center;
+    margin: 0px 30px 50px 30px;
+    color: #666;
+}
+
+#derechos {
+    text-align: left;
+    color: #666;
+    margin-left: 15px;
+}
+
+.fa-credit-card {
+    font-size: 2em;
+    color: #1259c3;
+    margin-left: 45%;
+}
+
+.fa-gift {
+    font-size: 2em;
+    color: #1259c3;
+    margin-left: 45%;
+}
+
+.fa-user-shield {
+    font-size: 2em;
+    color: #1259c3;
+    margin-left: 45%;
+}
+
+.fa-truck {
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+    color: #39b54a;
+}
+
+main {
+    width: 90vw;
+    margin: auto;
+}
+
+.articulos {
+    margin-bottom: 10px;
+    background-color: #ffffff
+}
+
+.infoarticulo {
+    background-color: #ffffff;
+    border-top: 1px solid #ebebeb;
+    padding: 15px;
+    position: relative;
+}
+
+.caja1 {
+    display: flex;
+}
+
+.caja2 {
+    display: flex;
+}
+
+@media (min-width: 361px) {
+
+    /* tablets */
+    .descripciones {
+        font-size: 16px;
+        color: #666;
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        margin-top: 15px;
+    }
+
+    .cuerpodetexto {
+        font-size: 12px;
+        display: block;
+    }
+
+    .fa-truck {
+        display: block;
+        font-size: 16px;
+        padding: 5px;
+        width: 30px;
+        height: 30px;
+        border: 1px solid #39b54a;
+        background-color: #FFF;
+        border-radius: 50%;
+        position: absolute;
+        right: 30px;
+        bottom: 94px;
+        color: #39b54a;
+    }
+
+    .infoarticulo {
+        background-color: #ffffff;
+        border-top: 1px solid #ebebeb;
+        padding: 15px;
+        position: relative;
+    }
+
+    .burger-menu {
+        display: none;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main {
+        flex-direction: row;
+    }
+}
+
+@media (min-width: 769px) {
+
+    /* desktop */
+    .descripciones {
+        font-size: 16px;
+        color: #666;
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        margin-top: 15px;
+    }
+
+    .cuerpodetexto {
+        font-size: 12px;
+        display: block;
+    }
+
+    .fa-truck {
+        display: block;
+        font-size: 16px;
+        padding: 5px;
+        width: 30px;
+        height: 30px;
+        border: 1px solid #39b54a;
+        background-color: #FFF;
+        border-radius: 50%;
+        position: absolute;
+        right: 30px;
+        bottom: 95px;
+        color: #39b54a;
+    }
+
+    .infoarticulo {
+        background-color: #ffffff;
+        border-top: 1px solid #ebebeb;
+        padding: 15px;
+        position: relative;
+    }
+
+    .burger-menu {
+        display: none;
+    }
+}
