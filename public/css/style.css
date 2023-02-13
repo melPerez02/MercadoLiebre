@@ -200,6 +200,7 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-top: 25px;
 }
 
 .fa-credit-card {
@@ -218,8 +219,8 @@ footer {
 }
 
 .subtitulo {
-    text-align: center;
     color: var(--grisOscuro);
+    text-align: center;
 }
 
 .cuadrotexto {
