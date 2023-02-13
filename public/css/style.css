@@ -5,7 +5,10 @@
 }
 
 header {
-    background-color: #EAC926
+    display: flex;
+    width: 100%;
+    background-color: #EAC926;
+    position: relative;
 }
 
 footer {
@@ -55,6 +58,7 @@ ul {
     font-size: 12px;
     text-align: center;
     margin-top: 10px;
+    padding-top: 5%;
 }
 
 .burger-menu {
@@ -63,9 +67,9 @@ ul {
     color: #ffffff;
     font-size: 20px;
     border-radius: 6px;
-    height: 35px;
-    width: 35px;
-    padding: 4px;
+    height: 25%;
+    width: 12%;
+    padding: 2%;
     margin: auto;
 }
 
@@ -83,11 +87,11 @@ ul {
     background-color: #ffffff;
     margin-left: 5px;
     margin-top: 2px;
-    border: 1px solid black;
+    border: 1px solid #ffffff;
 }
 
 .buscador {
-    padding-left: 15px;
+    width: 50%;
 }
 
 .subtitulo {
@@ -147,7 +151,8 @@ main {
 
 .articulos {
     margin-bottom: 10px;
-    background-color: #ffffff
+    background-color: #ffffff;
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
 }
 
 .infoarticulo {
@@ -157,27 +162,70 @@ main {
     position: relative;
 }
 
-.caja1 {
-    display: flex;
-}
-
 .caja2 {
     display: flex;
 }
 
-@media (min-width: 361px) {
+.cajaSuperior {
+    display: flex;
+    padding: 10px 10px 0px 10px;
+}
+
+.logo1 {
+    width: 50%;
+    align-items: center;
+    display: flex;
+}
+
+.caja1 {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    position: relative;
+}
+
+.lupa {
+    display: flex;
+    border-radius: 3px;
+    color: darkgrey;
+    position: absolute;
+    align-self: flex-end;
+    top: 10px;
+    right: 2px;
+}
+
+.textoBuscador {
+    display: flex;
+    color: darkgrey;
+    border: 0;
+    border-radius: 3px;
+    height: 250%;
+    width: 199%;
+}
+
+.cajaSuperior img {
+    display: flex;
+    width: 100%;
+}
+
+.cuerpoDeTexto1 {
+    margin-bottom: 5%;
+}
+
+
+
+@media (min-width: 768px) {
 
     /* tablets */
     .descripciones {
         font-size: 16px;
         color: #666;
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
         margin-top: 15px;
     }
 
     .cuerpodetexto {
         font-size: 12px;
-        display: block;
+        display: flex;
     }
 
     .fa-truck {
@@ -214,21 +262,55 @@ main {
     .main {
         flex-direction: row;
     }
+
+    .cajaArticulos {
+        display: flex;
+    }
+
+    .articulos {
+        margin-right: 15px;
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        margin-top: 15px;
+    }
+
+    .cajaSuperiorMq {
+        display: flex;
+    }
+
+    header { 
+        display: block;
+    }
+
+    .menuAloLargo {
+        display: flex;
+    }
+
+    .cuerpoTextoOfertas {
+        margin-left: 10px;
+    }
+
+    .cuerpoTextoOtros{
+        margin-left: 25px;
+    }
+
+    .cuerpoTextoCrea {
+        margin-left: 195px;
+    }
+
 }
 
-@media (min-width: 769px) {
+@media (min-width: 1024px) {
 
     /* desktop */
     .descripciones {
         font-size: 16px;
         color: #666;
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
         margin-top: 15px;
     }
 
     .cuerpodetexto {
         font-size: 12px;
-        display: block;
+        display: flex;
     }
 
     .fa-truck {
@@ -256,4 +338,87 @@ main {
     .burger-menu {
         display: none;
     }
+
+    .cajaArticulos1 {
+        display: flex;
+    }
+
+    .articulos {
+        margin-right: 15px;
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        margin-top: 15px;
+    }
+
+    .cajaSuperiorMq {
+        display: flex;
+        width: 100%;
+    }
+
+    .textoBuscador {
+        display: flex;
+        border: 1px solid #000000;
+        height: 100%;
+        color: darkgrey;
+    }
+
+    #cuerpodetexto1 {
+        display: flex;
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .caja1 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .lupa {
+        display: flex;
+        width: 100%;
+        top: 29px;
+        margin-right: -160px;
+    }
+
+    .lupa i {
+        margin-left: 10%;
+        color: #000000;
+        border: 1px solid #000000;
+        font-size: 13px;
+        margin-bottom: 62%;
+    }
+
+    .cuerpoDeTexto1 {
+        display: flex;
+        top: 25px;
+        position: relative;
+    }
+
+    .cajaSuperior {
+        display: flex;
+        width: 70%;
+    }
+
+    .buscador {
+        display: flex;
+        width: 40%;
+    }
+
+    .menuAloLargo {
+        display: flex;
+        width: 100%;
+    }
+
+    .cuerpoTextoOfertas {
+        margin-left: 10px;
+    }
+
+    .cuerpoTextoOtros{
+        margin-left: 25px;
+    }
+
+    .cuerpoTextoCrea {
+        margin-left: 450px;
+    }
+
 }
