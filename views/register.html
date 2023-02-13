@@ -5,33 +5,78 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="/css/style.css">
-    <title>Document</title>
+    <link href="/css/colors.css" rel="stylesheet">
+    <link href="/css/mediaQueryStyle.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" rel="stylesheet" />
+    <title>register</title>
 </head>
 
 <body>
-    <form action="#" method="post">
-        <input type="text" name="nombre" id="nombre" placeholder="Nombre y apellido">
-        <input type="text" name="nombreUsuario" id="nombreUsuario" placeholder="Nombre de usuario">
-        <input type="email" name="eMail" id="eMail" placeholder="E-mail">
-        <label for="fechaNacimiento">Fecha de nacimiento</label>
-        <input type="date" name="fechaNacimiento1">
-        <input type="text" name="domicilio" id="domicilio" placeholder="Domicilio">
-        <label for="perfilUsuario">Perfil del usuario</label>
-        <label>
-            <input type="radio" name="perfilDeUsuario" value="Comprador">
-            <input type="radio" name="perfilDeUsuario" value="Vendedor">
-        </label>
-        <label for="intereses">Intereses</label>
-        <label>
-            <input type="checkbox" name="intereses" value="Electro">
-            <input type="checkbox" name="intereses" value="Moda">
-            <input type="checkbox" name="intereses" value="Hogar">
-            <input type="checkbox" name="intereses" value="Jugueteria">
-            <input type="checkbox" name="intereses" value="Vida sana">
-        </label>
-
-    </form>
+    <header>
+        <div class="logo-container">
+            <div class="logo-bar-container">
+                <div class="logo">
+                    <a href="/"><img src="/images/logo-mercado-liebre.svg" alt="logo"></a>
+                </div>
+                <div class="search-button-container">
+                    <div class="search-container">
+                        <input type="text" placeholder="Buscar productos, marcas...">
+                        <button><i class="fas fa-search"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="card-container">
+                <h2 class="card-tittle"><i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta de crédito
+                </h2>
+            </div>
+        </div>
+        <div class="menu-container">
+            <ul>
+                <li>Ofertas</li>
+                <li>Tiendas Oficiales</li>
+                <li>Vender</li>
+                <li>Ayuda</li>
+            </ul>
+            <ul>
+                <li><a href="#">Creá tu cuenta<i class="fas fa-id-card"></i></a></li>
+                <li><a href="#">Ingresá<i class="fas fa-sign-in-alt"></i></a></li>
+                <li>Mis compras<i class="fas fa-shopping-basket"></i></li>
+            </ul>
+        </div>
+        <div class="burger-container">
+            <div class="burger-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+    <main>
+        <form action="#" method="post">
+            <input type="text" name="nombre" id="nombre" placeholder="Nombre y apellido">
+            <input type="text" name="nombreUsuario" id="nombreUsuario" placeholder="Nombre de usuario">
+            <input type="email" name="eMail" id="eMail" placeholder="E-mail">
+            <label for="fechaNacimiento">Fecha de nacimiento</label>
+            <input type="date" name="fechaNacimiento1">
+            <input type="text" name="domicilio" id="domicilio" placeholder="Domicilio">
+            <label for="perfilUsuario">Perfil del usuario</label>
+            <label>
+                <input type="radio" name="perfilDeUsuario" value="Comprador">
+                <input type="radio" name="perfilDeUsuario" value="Vendedor">
+            </label>
+            <label for="intereses">Intereses</label>
+            <label>
+                <input type="checkbox" name="intereses" value="Electro">
+                <input type="checkbox" name="intereses" value="Moda">
+                <input type="checkbox" name="intereses" value="Hogar">
+                <input type="checkbox" name="intereses" value="Jugueteria">
+                <input type="checkbox" name="intereses" value="Vida sana">
+            </label>
+        </form>
+    </main>
 </body>
 
 </html>
