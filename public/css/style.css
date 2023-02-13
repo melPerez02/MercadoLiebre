@@ -118,5 +118,123 @@ button {
     color: var(--blanco);
     background-color: var(--azul);
 }
-
 /*FIN HEADER*/
+
+ /*BANNER*/
+
+ .banner img {
+    width: 100%;
+    object-fit: cover;
+}
+
+/*FIN BANNER*/
+
+/*MAIN*/
+
+.fotoarticulos img {
+    width: 100%;
+    object-fit: cover;
+}
+
+main {
+    width: 90vw;
+    margin: auto;
+}
+
+.articulos {
+    margin-top: 10px;
+    margin-bottom: 15px;
+    background-color: var(--blanco);
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+
+.infoarticulo {
+    background-color: var(--blanco);
+    border-top: 1px solid var(--grisClaro);
+    padding: 15px;
+    position: relative;
+}
+
+.titulares {
+    color: var(--grisOscuro);
+}
+
+.descripciones {
+    display: none;
+}
+
+.fa-truck {
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+    color: #39b54a;
+}
+
+.descuentos {
+    color: var(--verde);
+    width: 70%;
+}
+
+.caja2 {
+    display: flex;
+}
+
+.precios {
+    width: 30%;
+}
+
+/*FIN MAIN*/
+
+/*FOOTER*/
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.fa-credit-card {
+    font-size: 2em;
+    color: var(--azul);
+}
+
+.fa-gift {
+    font-size: 2em;
+    color: var(--azul);
+}
+
+.fa-user-shield {
+    font-size: 2em;
+    color: var(--azul);
+}
+
+.subtitulo {
+    text-align: center;
+    color: var(--grisOscuro);
+}
+
+.cuadrotexto {
+    text-align: center;
+    margin: 0px 30px 50px 30px;
+    color: var(--grisOscuro);
+}
+
+.derechos {
+    color: var(--grisOscuro);
+    display: flex;
+    justify-content: left;
+    padding-left: 20px;
+}
+
+
+
+

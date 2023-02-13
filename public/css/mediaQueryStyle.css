@@ -38,10 +38,36 @@
         width: 45%;
         justify-content: space-between;
     }
+
+    .descripciones {
+        display: flex;
+        font-size: 16px;
+        color: var(--grisOscuro);
+        margin-top: 15px;
+    }
+
+    .cajaArticulos {
+        display: flex;
+    }
+
+    .articulos {
+        margin-right: 15px;
+    }
+
 }
 
 /*Desktop*/
-@media (min-width:1024px) {}
+@media (min-width:1024px) {
+    .cajaArticulos1 {
+        display: flex;
+    }
+
+    .articulos {
+        margin-right: 15px;
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+}
 
 /*Tv hasta 1366*/
 @media (min-width:1200px) {}
