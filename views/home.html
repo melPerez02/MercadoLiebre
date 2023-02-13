@@ -10,6 +10,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="/css/style.css">
+    <link href="/css/colors.css" rel="stylesheet">
+    <link href="/css/mediaQueryStyle.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" rel="stylesheet" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Mercado Liebre</title>
@@ -17,42 +19,42 @@
 
 <body>
     <header>
-        <div class="cajaSuperiorMq">
-            <div class="cajaSuperior">
-                <div class="logo1"><img src="images/logo-mercado-liebre.svg" alt="Imagen de encabezado" id="logo"></div>
-                <div class="caja1">
-                    <div class="buscador">
-                        <input class="textoBuscador" type="text" value="Buscar productos, marcas">
-                        <div class="lupa"><i class="fa-solid fa-magnifying-glass"></i></div>
+        <div class="logo-container">
+            <div class="logo-bar-container">
+                <div class="logo">
+                    <a href="/"><img src="/images/logo-mercado-liebre.svg" alt="logo"></a>
+                </div>
+                <div class="search-button-container">
+                    <div class="search-container">
+                        <input type="text" placeholder="Buscar productos, marcas...">
+                        <button><i class="fas fa-search"></i></button>
                     </div>
                 </div>
             </div>
-            <div class="cuerpoDeTexto1">
-                <p id="cuerpodetexto1"><i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta de crédito
-                </p>
+            <div class="card-container">
+                <h2 class="card-tittle"><i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta de crédito</h2>
             </div>
+        </div>
+        <div class="menu-container">
+            <ul>
+                <li>Ofertas</li>
+                <li>Tiendas Oficiales</li>
+                <li>Vender</li>
+                <li>Ayuda</li>
+            </ul>
+            <ul>
+                <li><a href="#">Creá tu cuenta<i class="fas fa-id-card"></i></a></li>
+                <li><a href="#">Ingresá<i class="fas fa-sign-in-alt"></i></a></li>
+                <li>Mis compras<i class="fas fa-shopping-basket"></i></li>
+            </ul>
+        </div>
+        <div class="burger-container">
             <div class="burger-menu">
                 <i class="fas fa-bars"></i>
             </div>
-            <br>
-        </div>
-        <div class="menuAloLargo">
-            <ul class="cuerpodetexto">
-                <li class="cuerpoTextoOfertas">Ofertas</li>
-                <li class="cuerpoTextoOtros">Tiendas Oficiales</li>
-                <li class="cuerpoTextoOtros">Vender</li>
-                <li class="cuerpoTextoOtros">Ayuda</li>
-            </ul>
-            <br>
-            <ul class="cuerpodetexto">
-                <li class="cuerpoTextoCrea">Creá tu cuenta<i class="far fa-id-card"></i></li>
-                <li class="cuerpoTextoOtros">Ingresá<i class="fas fa-sign-in-alt"></i></li>
-                <li class="cuerpoTextoOtros">Mis compras<i class="fas fa-shopping-basket"></i></li>
-            </ul>
         </div>
     </header>
     <div class="banner"><img src="images/img-home-banner.jpg" alt="Imagen de main"></div>
-
     <main>
         <p class="titulares"><strong>Basado en tu última visita</strong></p>
         <div class="main">
@@ -183,8 +185,8 @@
         <p class="cuadrotexto">¿No te gusta? ¡Devolvelo! En MercadoLiebre, no hay nada que no puedas hacer porque estás
             siempre
             protegid@.</p>
-        <p id="derechos"><strong>Copyright © 1999-2020 MercadoLiebre S.R.L.</strong></p>
     </footer>
+    <div class="derechos"><p><strong>Copyright © 1999-2020 MercadoLiebre S.R.L.</strong></p></div>
 </body>
 
 </html>

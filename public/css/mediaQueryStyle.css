@@ -1,0 +1,70 @@
+/*Tablet*/
+@media (min-width:768px) {
+    .logo-container {
+        /*border: 3px solid red;*/
+        flex-direction: row;
+    }
+
+    .logo-bar-container {
+        /*border: 3px solid gray;*/
+        width: 50%;
+    }
+
+    .card-container {
+        /*border: 3px solid gray;*/
+        display: flex;
+        width: 50%;
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card-container h2 {
+        font-size: 16px;
+    }
+
+    .burger-container {
+        display: none;
+    }
+
+    .menu-container {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+    }
+
+    ul {
+        display: flex;
+        width: 45%;
+        justify-content: space-between;
+    }
+
+    .descripciones {
+        display: flex;
+        font-size: 16px;
+        color: var(--grisOscuro);
+        margin-top: 15px;
+    }
+
+    .cajaArticulos {
+        display: flex;
+    }
+
+    .articulos {
+        margin-right: 15px;
+    }
+
+}
+
+/*Desktop*/
+@media (min-width:1024px) {
+    .cajaArticulos1 {
+        display: flex;
+    }
+
+    .articulos {
+        margin-right: 15px;
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+}
