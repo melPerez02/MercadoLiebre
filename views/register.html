@@ -55,28 +55,80 @@
         </div>
     </header>
     <main>
-        <form action="#" method="post">
-            <input type="text" name="nombre" id="nombre" placeholder="Nombre y apellido">
-            <input type="text" name="nombreUsuario" id="nombreUsuario" placeholder="Nombre de usuario">
-            <input type="email" name="eMail" id="eMail" placeholder="E-mail">
-            <label for="fechaNacimiento">Fecha de nacimiento</label>
-            <input type="date" name="fechaNacimiento1">
-            <input type="text" name="domicilio" id="domicilio" placeholder="Domicilio">
-            <label for="perfilUsuario">Perfil del usuario</label>
-            <label>
-                <input type="radio" name="perfilDeUsuario" value="Comprador">
-                <input type="radio" name="perfilDeUsuario" value="Vendedor">
+        <h2 class="bienvenida">¡Registrate y viví una experiencia completa de compra!</h2>
+        <form class="register" action="/register" method="post">
+            <div class="nombreApellido"><input type="text" required placeholder="Nombre y apellido" pattern="^[A-Za-z ]*$"></div>
+            <div class="nombreUsuario"><input type="text" required placeholder="Nombre de usuario"
+                    pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$"></div>
+            <div class="email"><input type="email" required placeholder="E-mail"
+                    pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$"></div>
+            <div class="fechaNacimiento"><label for="fechaNacimiento">Fecha de nacimiento</label></div>
+            <div class="calendario"><input type="date" name="fechaNacimiento1"></div>
+            <div class="domicilio"><input type="text" required placeholder="Domicilio" pattern="^[A-Za-z ]*$"></div>
+            <div class="perfilUsuario"><p>Perfil del usuario</p></div>
+            <label class="perfilUsuario1">
+                <label>Comprador
+                    <input name="perfilUsuario" type="radio" value="Comprador" />
+                </label>
+                <label>Vendedor
+                    <input name="perfilUsuario" type="radio" value="Vendedor" />
+                </label>
             </label>
-            <label for="intereses">Intereses</label>
-            <label>
-                <input type="checkbox" name="intereses" value="Electro">
-                <input type="checkbox" name="intereses" value="Moda">
-                <input type="checkbox" name="intereses" value="Hogar">
-                <input type="checkbox" name="intereses" value="Jugueteria">
-                <input type="checkbox" name="intereses" value="Vida sana">
-            </label>
+            <div class="intereses"><p>Intereses</p></div>
+            <div class="interes-container">
+                <label class="intereses1">
+                    <input type="checkbox" name="intereses" value="Electro">
+                    <p>Electro</p>
+                </label>
+                <label class="intereses1">
+                    <input type="checkbox" name="intereses" value="Moda">
+                    <p>Moda</p>
+                </label>
+                <label class="intereses1">
+                    <input type="checkbox" name="intereses" value="Hogar">
+                    <p>Hogar</p>
+                </label>
+                <label class="intereses1">
+                    <input type="checkbox" name="intereses" value="Jugueteria">
+                    <p>Jugueteria</p>
+                </label>
+                <label class="intereses1">
+                    <input type="checkbox" name="intereses" value="Vida sana">
+                    <p>Vida sana</p>
+                </label>
+            </div>
+            <div class="imagenPerfil"><p>Imagen de perfil</p></div>
+            <div class="avatar"><input type="file" name="avatar" accept=".jpg .png" multiple=""></div>
+            <div class="contraseña"><label for="contraseña"></label>
+                <input type="password" name="password" placeholder="Contraseña" id="password" pattern="[A-Za-z0-9!?-]{8,12}" required="">
+            </div>
+            <div class="contraseña"> <label for="contraseña"></label>
+                <input type="password" name="password" placeholder="Confirmar Contraseña" id="passwrod" pattern="[A-Za-z0-9!?-]{8,12}" required="">
+            </div>
+            <div class="botones-container">
+                <div class="boton-enviar"><button class="botones" type="submit">Enviar</button></div>
+                <div class="boton-borrar"><button class="botones" type="reset">Borrar</button></div>
+            </div>
         </form>
     </main>
+    <footer>
+        <div><i class="fas fa-credit-card"></i></div>
+        <p class="subtitulo"><strong>Pagá con tarjeta o en efectivo</strong></p>
+        <p class="cuadrotexto">Con MercadoLiebreCash, tenés cuotas sin interés con tarjeta o efectivo en puntos de pago.
+            ¡Y siempre es
+            seguro!</p>
+        <div><i class="fas fa-gift"></i></div>
+        <p class="subtitulo"><strong>Envío gratis desde $ 2.500</strong></p>
+        <p class="cuadrotexto">Solo por estar registrad@ en MercadoLiebre tenés envíos gratis en miles de productos. Es
+            un beneficio de
+            MercadoPuntos.</p>
+        <div><i class="fas fa-user-shield"></i></div>
+        <p class="subtitulo"><strong>Seguridad, de principio a fin</strong></p>
+        <p class="cuadrotexto">¿No te gusta? ¡Devolvelo! En MercadoLiebre, no hay nada que no puedas hacer porque estás
+            siempre
+            protegid@.</p>
+    </footer>
+    <div class="derechos"><p><strong>Copyright © 1999-2020 MercadoLiebre S.R.L.</strong></p></div>
 </body>
 
 </html>
