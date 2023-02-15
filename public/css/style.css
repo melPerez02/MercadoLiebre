@@ -296,6 +296,81 @@ form {
     justify-content: center;
 }
 
+.mainLogin {
+    width: 90vw;
+    margin: auto;
+}
+
+.acceso {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.email-container, .contraseñaLogin {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.iniciarSesion {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.recuperar {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.boton-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 75%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.buttonLogin {
+    height: 35px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.ingresarLogin {
+    width: 50%;
+    background-color: var(--grisMedio);
+    border-radius: 5px;
+    border: 1px solid var(--grisOscuro);
+    font-weight: bold;
+}
+
+.register-container {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.acceso {
+    font-size: 14px;
+}
+
+.acceder {
+    margin-right: 15px;
+}
 
 /*FIN MAIN*/
 
@@ -341,3 +416,4 @@ footer {
     justify-content: left;
     padding-left: 20px;
 }
+
