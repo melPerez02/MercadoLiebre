@@ -399,6 +399,10 @@ footer {
     color: var(--azul);
 }
 
+.iconoFooter {
+    text-align: center;
+}
+
 .subtitulo {
     color: var(--grisOscuro);
     text-align: center;
@@ -415,5 +419,10 @@ footer {
     display: flex;
     justify-content: left;
     padding-left: 20px;
+    background-color: var(--blanco);
+}
+
+footer {
+    background-color: var(--blanco);
 }
 

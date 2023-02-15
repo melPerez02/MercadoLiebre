@@ -77,8 +77,21 @@
     .derechos {
         color: var(--grisOscuro);
         display: flex;
-        justify-content: center;
+        justify-content: left;
         padding-left: 20px;
+        background-color: var(--blanco);
+    }
+
+    .contenedorCajasFooter {
+        display: flex;
+    }
+
+    .iconoFooter {
+        text-align: center;
+    }
+
+    footer {
+        background-color: var(--blanco);
     }
 
 }
